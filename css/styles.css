@@ -32,7 +32,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
-.nav-list-item:hover .nav-list-item:focus {
+.nav-list-item:hover,
+.nav-list-item:focus {
   color: #404bbf;
 }
 
@@ -75,7 +76,7 @@ ul {
 }
 .hero-button:hover,
 .hero-button:focus {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 
 .descr {
@@ -133,4 +134,8 @@ ul {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+
+.footer-logo {
+  color: #f4f4fd;
 }
