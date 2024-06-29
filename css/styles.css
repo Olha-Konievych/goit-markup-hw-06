@@ -12,7 +12,7 @@ ul {
 }
 
 .logo-studio {
-  color: #f4f4fd;
+  color: #2e2f42;
 }
 
 .nav-link {
@@ -31,6 +31,9 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+.nav-list-item:hover .nav-list-item:focus {
+  color: #404bbf;
 }
 
 .contacts {
