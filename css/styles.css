@@ -143,13 +143,16 @@ p {
   text-align: center;
   font-size: 56px;
   font-weight: 700;
-  line-height: 107.143%;
-  letter-spacing: 1.12px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
 }
 .hero-section {
   background: var(--NAVY-BLUE, #2e2f42);
   padding-top: 188px;
   padding-bottom: 188px;
+  height: 600px;
+  display: flex;
+  align-items: center;
 }
 .hero-button {
   border: none;
@@ -166,7 +169,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
   background: var(--IRIS, #4d5ae5);
   cursor: pointer;
 }
@@ -196,7 +199,7 @@ p {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
@@ -209,6 +212,8 @@ p {
 
 .team-content {
   padding: 32px 16px;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
 }
 
 .descr {
@@ -216,7 +221,7 @@ p {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
