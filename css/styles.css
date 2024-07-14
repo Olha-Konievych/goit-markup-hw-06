@@ -330,6 +330,7 @@ img {
 .social-item {
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -348,7 +349,7 @@ img {
 }
 
 .social-link:hover,
-social-link:focus {
+.social-link:focus {
   background-color: #404bbf;
 }
 
@@ -477,7 +478,7 @@ social-link:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fotter-icon {
