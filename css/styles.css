@@ -184,7 +184,7 @@ p {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/background.jpg);
+    url(../images/background.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   max-width: 1440px;
@@ -505,8 +505,4 @@ img {
 .fotter-social:hover,
 .fotter-social:focus {
   background-color: #31d0aa;
-}
-
-.stuff {
-  margin-right: 120px;
 }
