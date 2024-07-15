@@ -498,11 +498,14 @@ img {
 .socials {
   display: flex;
   max-width: 208px;
-  margin-left: 120px;
   flex-wrap: wrap;
 }
 
 .fotter-social:hover,
 .fotter-social:focus {
   background-color: #31d0aa;
+}
+
+.stuff {
+  margin-right: 120px;
 }
