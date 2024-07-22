@@ -460,7 +460,7 @@ img {
   align-items: baseline;
 }
 
-.down-social {
+.down-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -499,6 +499,7 @@ img {
   display: flex;
   max-width: 208px;
   flex-wrap: wrap;
+  margin-right: 80px;
 }
 
 .fotter-social:hover,
@@ -508,4 +509,231 @@ img {
 
 .stuff {
   margin-right: 120px;
+}
+
+/* div 3 */
+
+.foooter-input {
+  margin-left: auto;
+}
+
+.footer-form {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #2e2f42;
+  margin-right: 24px;
+}
+
+.footer-button {
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  display: flex;
+  border-color: #4d5ae5;
+}
+
+.btn-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-form::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding-left: 16px;
+}
+
+.form {
+  display: flex;
+}
+
+.icon-foot {
+  fill: #fff;
+  margin-left: 16px;
+}
+
+/* modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop:not(.is-open) .modal {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.close-btn {
+  color: #e7e9fc;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+}
+
+.modal-text {
+  color: #2e2f42;
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-left: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.modal-input {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 38px;
+}
+
+.modal-input:focus {
+  border-color: #4d5ae5;
+}
+
+.inputs {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.label {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+/* icons */
+
+.close-icon {
+  fill: #2e2f42;
+}
+
+.form-icon {
+}
+
+.div-pos {
+  position: relative;
+}
+
+.icons {
+  position: absolute;
+  top: 26px;
+  left: 16px;
+}
+
+.div-pos .label {
+  margin-bottom: 4px;
+}
+
+.div-pos input:focus {
+  border-color: #4d5ae5;
+}
+
+.div-pos input + svg {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.div-pos input:focus + svg {
+  border-color: #4d5ae5;
+}
+
+.box {
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2e2f42;
+}
+
+.consent {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.polisy {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
+.modal-btn {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border: none;
+  height: 56px;
+  min-width: 169px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  align-items: center;
+  border-radius: 4px;
+  padding: 16px 32px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: #4d5ae5;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
