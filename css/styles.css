@@ -683,13 +683,9 @@ img {
   border-color: #4d5ae5;
 }
 
-.modal-input:focus .form-icon {
+.modal-input:focus + .form-icon {
   fill: #4d5ae5;
 }
-/* .modal-form {
-  padding-right: 24px;
-  padding-left: 24px;
-} */
 
 .label {
   display: block;
@@ -704,8 +700,6 @@ img {
 .form-elements {
   position: relative;
 }
-
-/* icons */
 
 .form-icon {
   position: absolute;
@@ -730,13 +724,16 @@ img {
 
 .div-pos {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .icons {
   position: absolute;
   top: 26px;
   left: 16px;
+}
+
+.div-comment {
+  margin-bottom: 16px;
 }
 
 .comment {
