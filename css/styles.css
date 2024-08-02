@@ -233,8 +233,10 @@ p {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transform: translate(-50%, -50%);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
@@ -390,6 +392,18 @@ p {
   margin-right: auto;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-mob-2x.jpg);
+  }
+}
+
 .hero-title {
   max-width: 216px;
   margin: 0 auto 72px auto;
@@ -437,6 +451,18 @@ p {
     max-width: 768px;
   }
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-tab-2x.jpg);
+    }
+  }
+
   .hero-title {
     max-width: 496px;
     margin: 0 auto 36px auto;
@@ -455,6 +481,18 @@ p {
       ),
       url(../images/background.jpg);
     max-width: 1440px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-desk-2x.jpg);
+    }
   }
 
   .hero-title {
@@ -822,7 +860,7 @@ p {
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  /* align-items: baseline; */
   width: 320px;
 }
 
@@ -965,6 +1003,8 @@ p {
     flex-direction: row;
     margin: 0 auto;
     width: 768px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
 
   .footer-link {
@@ -1215,12 +1255,19 @@ p {
 }
 
 .consent {
+  display: flex;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-text {
+  width: 231px;
 }
 
 .policy {
@@ -1258,6 +1305,10 @@ p {
   .modal {
     width: 408px;
     min-height: 584px;
+  }
+
+  .consent {
+    display: inline;
   }
 }
 
